@@ -1,21 +1,21 @@
 import logging
+
+from modules.examples.dataclass import User
+from modules.examples.logger import Example as LoggingExample
 from modules.logger import setup_logger
-from modules.logic import Foo
+
 setup_logger()
 logger = logging.getLogger("my_app")  # __name__ is a common choice
 
 
 def main():
-    logger.debug("debug message")
-    logger.info("info message")
-    logger.warning("warning message")
-    logger.error("error message")
-    logger.critical("critical message")
-    Foo.calculate()
-    try:
-        1 / 0
-    except ZeroDivisionError:
-        logger.exception("exception message")
+    LoggingExample()
+
+    # Dataclasses
+    u1 = User(name="Michael", id=1, email="foo@example.com")
+    u2 = User(name="Hans", id=2)
+    print(u2.email)
+    print(u1 == u2)
 
 
 if __name__ == "__main__":
