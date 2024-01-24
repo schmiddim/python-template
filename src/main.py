@@ -25,6 +25,7 @@ def main():
     # Load env variables
     print(os.getenv("DATABASE_HOST"), os.getenv("DATABASE_USER"), os.getenv("MAIL"))
 
+    # @todo arg parser
 
 if __name__ == "__main__":
     main()
