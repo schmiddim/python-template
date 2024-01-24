@@ -17,3 +17,10 @@ Code https://github.com/mCodingLLC/VideosSampleCode/blob/master/videos/126_attrs
 
 ## Env Variables 
 Docs https://pypi.org/project/python-dotenv/
+
+
+## GitHub Action + Unit Testing
+https://pytest-with-eric.com/integrations/pytest-github-actions/
+```
+pytest  -v -s
+```
