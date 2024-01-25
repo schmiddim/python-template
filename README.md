@@ -21,6 +21,12 @@ Docs https://pypi.org/project/python-dotenv/
 
 ## GitHub Action + Unit Testing
 https://pytest-with-eric.com/integrations/pytest-github-actions/
-```
+```shell
 pytest  -v -s
+```
+
+## Docker
+```shell
+docker build  . -t awesome-app
+docker run awesome-app
 ```
